@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio — Renan Gomes</title>
+  <meta name="description" content="Portfólio de Renan Gomes — Desenvolvedor Front‑End" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header fixo -->
+  <header class="header" id="topo">
+    <div class="container nav">
+      <a href="#home" class="brand" aria-label="Ir para início">Renan<span>Gomes</span></a>
+      <button class="hamburger" id="btnMenu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu" role="navigation">
+        <a href="#home" class="menu__link">Home</a>
+        <a href="#sobre" class="menu__link">Sobre</a>
+        <a href="#especialidades" class="menu__link">Especialidades</a>
+        <a href="#projetos" class="menu__link">Projetos</a>
+        <a href="#contato" class="menu__link">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="section hero">
+    <div class="container grid-2">
+      <div class="hero__copy">
+        <p class="kicker">Olá, eu sou</p>
+        <h1>Renan Gomes</h1>
+        <p class="subtitle">Desenvolvedor <strong>Front‑End</strong> criando interfaces modernas, acessíveis e rápidas.</p>
+        <div class="cta">
+          <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">Falar comigo</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <!-- Imagem de perfil; troque pela sua -->
+        <img src="imagens/Sem título.png" alt="Foto de Renan Gomes" class="avatar" />
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-down" aria-label="Role para baixo">﹀</a>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section sobre">
+    <div class="container narrow">
+      <h2 class="section__title">Sobre mim</h2>
+      <p>Sou desenvolvedor front‑end apaixonado por transformar ideias em experiências digitais elegantes. Trabalho com
+        <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> e <strong>React</strong>, sempre com foco em
+        acessibilidade, performance e design responsivo.</p>
+      <ul class="badges">
+        <li>Performance</li><li>Acessibilidade</li><li>SEO</li><li>UI/UX</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Especialidades -->
+  <section id="especialidades" class="section skills">
+    <div class="container">
+      <h2 class="section__title">Minhas especialidades</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="imagens/web design.avif" alt="Web Design" loading="lazy" />
+          <h3>Web Design</h3>
+          <p>Layouts modernos, responsivos e funcionais para todos os dispositivos.</p>
+        </article>
+        <article class="card">
+          <img src="imagens/html2.jpg" alt="Desenvolvimento Front-End" loading="lazy" />
+          <h3>Desenvolvimento Front‑End</h3>
+          <p>Interfaces com HTML, CSS, JavaScript e React, com foco na experiência do usuário.</p>
+        </article>
+        <article class="card">
+          <img src="imagens/otimizacao.png" alt="Otimização de Performance" loading="lazy" />
+          <h3>Otimização de Performance</h3>
+          <p>Sites rápidos, acessíveis e bem ranqueados, medidos com Lighthouse/Core Web Vitals.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section projetos">
+    <div class="container">
+      <h2 class="section__title">Projetos recentes</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="imagens/rede socias.png" alt="Site institucional" loading="lazy" />
+          <h3>Redes Socias</h3>
+          <p>Site com um pouco das minhas habilidades</p>
+          <a class="btn btn--tiny" href="https://renangomesp.github.io/Projeto-Social/" target="_blank" rel="noopener">Ver online</a>
+        </article>
+        <article class="card">
+          <img src="imagens/login page.png" alt="Landing Page" loading="lazy" />
+          <h3>Landing Page</h3>
+          <p>Página única focada em conversão, com design responsivo.</p>
+          <a class="btn btn--tiny" href="https://renangomesp.github.io/Projeto-Login/" target="_blank" rel="noopener">Ver online</a>
+        </article>
+        <article class="card">
+          <img src="https://picsum.photos/seed/app/500/300" alt="Aplicativo Web" loading="lazy" />
+          <h3>Aplicativo Web</h3>
+          <p>SPA em React com estado global e rotas dinâmicas.</p>
+          <a class="btn btn--tiny" href="#" aria-disabled="true">Em breve</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section contato">
+    <div class="container grid-2">
+      <div>
+        <h2 class="section__title">Vamos conversar</h2>
+        <p>Preferência por WhatsApp e GitHub/LinkedIn.</p>
+        <ul class="contact-list">
+          <li><a class="contact" href="https://w.app/renangomes" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a class="contact" href="https://github.com/Renangomesp" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="contact" href="https://www.linkedin.com/in/renan-gomes-995b53370" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a class="contact" href="https://www.instagram.com/g.ren4n/#"  target="_blank">Instagram</a></li>
+        </ul>
+      </div>
+      
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Renan Gomes — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
